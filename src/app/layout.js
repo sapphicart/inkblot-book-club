@@ -10,7 +10,8 @@ export const metadata = {
       url: 'https://inkblot-book-club.vercel.app',
       images: [
         {
-          url: 'https://inkblot-book-club.vercel.app/cover.png',
+          url: 'https://raw.githubusercontent.com/sapphicart/inkblot-book-club/master/src/app/cover.png',
+          secureUrl: 'https://raw.githubusercontent.com/sapphicart/inkblot-book-club/master/src/app/cover.png',
           width: 1200,
           height: 630,
           alt: "Cover image for Inkblot Book Club",
