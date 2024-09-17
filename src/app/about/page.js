@@ -50,8 +50,8 @@ export default function About() {
                         you're a reader, a cinephile or just curious about Inkblot, click the button below and join us!
                         <br></br>
                         <br></br>
-                        Due to resource constraints, we might choose only English books as Book of the Month. 
-                        However, you are free to read the BOTM in your native tongue and create 
+                        Due to resource constraints, we might choose only English books (this includes translations of Non-English literature)
+                        as Book of the Month. However, you are free to read the BOTM in your native tongue and create 
                         small communities inside Inkblot to discuss literature in other languages. 
                         For more info, head over to our Discord!
                     </p>
