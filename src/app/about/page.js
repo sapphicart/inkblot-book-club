@@ -64,7 +64,7 @@ export default function About() {
                 transition={{duration: 1}}
             >
                 <div className="flex flex-col items-center justify-center">
-                    <Link href="https://discord.gg/xzZ7e9XC7j" target="_blank" className="bg-violet py-2 px-8 rounded-lg text-black border-2 border-white drop-shadow-md hover:bg-black hover:text-white transition active:translate-x-1 active:translate-y-1 active:drop-shadow-none focus:bg-black focus:text-white focus:translate-x-1 focus:translate-y-1 focus:drop-shadow-none">
+                    <Link href="https://discord.gg/V2xARZ3jeX" target="_blank" className="bg-violet py-2 px-8 rounded-lg text-black border-2 border-white drop-shadow-md hover:bg-black hover:text-white transition active:translate-x-1 active:translate-y-1 active:drop-shadow-none focus:bg-black focus:text-white focus:translate-x-1 focus:translate-y-1 focus:drop-shadow-none">
                             <button className={`items-center justify-center text-xl md:text-2xl ${campaignMedium.className}`}>Join Now</button>
                     </Link>
                 </div>

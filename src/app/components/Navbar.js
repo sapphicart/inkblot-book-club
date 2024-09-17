@@ -47,7 +47,7 @@ const Navbar = () => {
         >
           <ul className="hidden md:flex p-4 items-center">
             <Link href="about">
-              <li className="nav-links cursor-pointer mx-4 text-lg md:text-xl link-underline">
+              <li className="nav-links cursor-pointer mx-4 text-lg md:text-xl hover:underline hover:underline-offset-8 transition hover:duration-500 focus:border-2 focus:border-white">
                 ABOUT
               </li>
             </Link>
@@ -55,18 +55,18 @@ const Navbar = () => {
         </motion.ul>
 
       {/* Mobile Menu Button */}
-      <div
+      <button
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-30 md:hidden"
+        className="cursor-pointer mx-4 border-2 border-transparent z-30 md:hidden hover:border-2 hover:border-white focus:border-2 focus:border-white"
       >
-        {nav ? <HiOutlineX size={40} className="fill-white" /> : <HiMenu size={40} className="fill-white" />}
-      </div>
+        {nav ? <HiOutlineX size={40} className="fill-white" alt="Close navbar icon"/> : <HiMenu size={40} className="fill-white" alt="Open navbar icon"/>}
+      </button>
 
       {/* Mobile Menu */}
       <div className={`fixed top-0 left-0 w-full h-full bg-black z-20 flex flex-col items-center justify-center space-y-6 md:hidden transition-transform transform ${nav ? 'translate-x-0' : 'translate-x-full'}`}>
         <ul>
           <Link href="about">
-            <li className="nav-links cursor-pointer text-4xl hover:underline hover:underline-offset-8 focus:underline decoration-2 duration-200">
+            <li className="nav-links cursor-pointer text-4xl hover:underline hover:underline-offset-8 focus:border-2 focus:border-white decoration-2 duration-500">
               ABOUT
             </li>
           </Link>
