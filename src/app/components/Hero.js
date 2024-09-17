@@ -34,7 +34,7 @@ export default function Hero() {
 
 
     return (
-        <div className="flex flex-col w-full bg-cover bg-center justify-end h-screen">
+        <div className="flex flex-col w-full justify-end h-screen">
             <div className="flex flex-col w-full items-start justify-end mb-6">
                 <motion.div
                     initial={isAnimationDisabled? animateImg : initialImg}
@@ -68,9 +68,9 @@ export default function Hero() {
                 animate={isAnimationDisabled ? undefined : animateBtn}
                 transition={{duration: 1}}
             >
-                <div className="flex flex-col items-center justify-center my-12">
+                <div className="flex flex-col items-center justify-center mb-10">
                     <Link href="https://discord.gg/xzZ7e9XC7j" target="_blank" className="bg-violet py-3 px-10 text-black rounded-lg border-2 border-black drop-shadow-sm hover:bg-black hover:text-white hover:border-2 hover:border-violet transition active:translate-x-1 active:translate-y-1 active:drop-shadow-none focus:bg-black focus:text-white focus:border-2 focus:border-violet focus:translate-x-1 focus:translate-y-1 focus:drop-shadow-none">
-                        <button className={`items-center justify-center text-2xl ${campaignMedium.className}`}>Join Now</button>
+                        <button className={`items-center justify-center text-xl md:text-2xl ${campaignMedium.className}`}>Join Now</button>
                     </Link>
                 </div>
             </motion.div>

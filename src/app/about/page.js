@@ -32,17 +32,18 @@ export default function About() {
                 transition={{duration: 1}}
             >
             <div className="items-center justify-center flex flex-col">
-                <h1 className={`text-4xl ${campaign.className}`}>About</h1>
+                {/*<h1 className={`text-4xl ${campaign.className}`}>About</h1>*/}
                 <div className="flex flex-col items-center justify-center">
                     <Image
                         src={logoPic}
                         width={200}
                         height={200}
                         alt="Logo Image for Inkblot Book Club"
+                        priority={true}
                     >
                     </Image>
                 </div>
-                <div className="flex flex-col mt-10 w-3/4 items-start justify-start">
+                <div className="flex flex-col my-10 w-3/4 items-start justify-start">
                     <p className={`text-md md:text-lg ${lausanne.className}`}>
                         Inkblot Book Club is a small community engaging in healthy discussions and critiques 
                         over books. Inkblot community is also interested in films so whether 
@@ -63,7 +64,7 @@ export default function About() {
                 transition={{duration: 1}}
             >
                 <div className="flex flex-col items-center justify-center">
-                    <Link href="https://discord.gg/xzZ7e9XC7j" target="_blank" className="bg-violet py-2 px-8 rounded-lg text-black border-2 border-white drop-shadow-md mt-8 hover:bg-black hover:text-white transition active:translate-x-1 active:translate-y-1 active:drop-shadow-none focus:bg-black focus:text-white focus:translate-x-1 focus:translate-y-1 focus:drop-shadow-none">
+                    <Link href="https://discord.gg/xzZ7e9XC7j" target="_blank" className="bg-violet py-2 px-8 rounded-lg text-black border-2 border-white drop-shadow-md hover:bg-black hover:text-white transition active:translate-x-1 active:translate-y-1 active:drop-shadow-none focus:bg-black focus:text-white focus:translate-x-1 focus:translate-y-1 focus:drop-shadow-none">
                             <button className={`items-center justify-center text-xl md:text-2xl ${campaignMedium.className}`}>Join Now</button>
                     </Link>
                 </div>
